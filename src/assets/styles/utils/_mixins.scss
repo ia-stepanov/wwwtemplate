@@ -1,0 +1,45 @@
+@mixin h1($color: $white) {
+  font-size: 4rem;
+  color: $color;
+  font-family: $mainFont;
+  text-shadow: $mainShadow;
+  margin-bottom: 3rem;
+
+  @media ($tablet) {
+    font-size: 5.9rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@mixin h2($color: $primaryColor, $align: center) {
+  font-size: 3rem;
+  color: $primaryColor;
+  text-align: $align;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+@mixin h3($color: $white) {
+  font-size: 2.4rem;
+  color: $white;
+  line-height: 1.25;
+}
+
+@mixin p1($color: $textColor) {
+  font-size: 1.6rem;
+  color: $textColor;
+  line-height: 1.5;
+}
+
+@mixin p2($color: $textColor) {
+  font-size: 1.4rem;
+  color: $textColor;
+  line-height: 1.29;
+}
+
+@mixin lead($color: $white) {
+  font-size: 2rem;
+  color: $white;
+  line-height: 1.8;
+  text-shadow: $mainShadow;
+}
