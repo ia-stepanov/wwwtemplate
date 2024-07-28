@@ -7,11 +7,9 @@
   }
 
   &__image {
+    @include img();
     width: 100%;
     height: 15rem;
-    background-color: $primaryColor;
-    object-fit: cover;
-    object-position: center;
     margin-bottom: 1.5rem;
 
     @media ($tablet) {
