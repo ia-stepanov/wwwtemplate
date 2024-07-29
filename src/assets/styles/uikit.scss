@@ -40,3 +40,7 @@ h3 {
 .lead {
   @include lead();
 }
+
+.btn {
+  @extend %btn;
+}
