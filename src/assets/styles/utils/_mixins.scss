@@ -50,6 +50,23 @@
   object-position: center;
 }
 
+%input {
+  color: $secondaryColor;
+  font-size: 1.6rem;
+  background-color: $white;
+  padding: 1.4rem 1rem;
+  line-height: 1;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+%textarea {
+  @extend %input;
+
+  resize: none;
+  height: 7rem;
+}
+
 %btn {
   display: inline-block;
   background-color: $white;
