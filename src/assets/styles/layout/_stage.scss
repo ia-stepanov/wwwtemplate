@@ -12,11 +12,6 @@
       flex-direction: row;
       justify-content: space-between;
     }
-
-    @media ($desktop) {
-      padding-left: 0;
-      padding-right: 0;
-    }
   }
 
   &__title {
@@ -40,12 +35,15 @@
 
     @media ($tablet) {
       max-width: 300px;
+      flex-shrink: 0;
       margin-bottom: 0;
+      margin-left: 4rem;
     }
 
     @media ($desktop) {
       max-width: 469px;
       margin-bottom: 0;
+      margin-left: 8rem;
     }
   }
 }
