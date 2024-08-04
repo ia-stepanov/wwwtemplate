@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Стартовый проект для сборки и разработки веб-макетов и UI Kit к ним.",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel src/index.html --open",
     "kit": "parcel src/uikit.html --open",
-    "build:uikit": "rm -rf build/uikit && parcel build src/uikit.html --dist-dir build/uikit",
-    "build": "rm -rf build/uikit && parcel build src/index.html --dist-dir build/www"
+    "build:uikit": "rm -rf npm run && parcel build src/uikit.html --dist-dir build/uikit",
+    "build": "rm -rf build && parcel build src/index.html --dist-dir build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Mikhail Nepomnyashchiy",
   "license": "ISC",
@@ -21,7 +22,8 @@
     "ie 10"
   ],
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.12.0"
+    "@parcel/transformer-sass": "^2.12.0",
+    "gh-pages": "^6.1.1"
   },
   "volta": {
     "node": "20.10.0"
