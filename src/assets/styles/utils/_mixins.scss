@@ -71,6 +71,10 @@
   line-height: 1;
   border: none;
   border-radius: 0.5rem;
+
+  &:placeholder {
+    color: $secondaryColor;
+  }
 }
 
 %textarea {
@@ -78,6 +82,7 @@
 
   resize: none;
   height: 7rem;
+  font-family: $mainFont;
 }
 
 %btn {
@@ -100,7 +105,7 @@
     background-color: darken($white, 20%);
   }
 
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
