@@ -48,7 +48,7 @@
 
 <details><summary><b>Развернуть</b></summary>
 
-[![wwwtemplate](./screenshot/wwwtemplate-main.jpg)](https://ia-stepanov.github.io/wwwtemplate/)
+[![wwwtemplate](./src/screenshot/wwwtemplate-main.jpg)](https://ia-stepanov.github.io/wwwtemplate/)
 
 </details>
 
